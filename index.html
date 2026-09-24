@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionAI — Photo & Video Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo"><span>✦</span> VisionAI</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#generate">Generate</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <button class="login-btn">Sign In</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="badge">✨ AI CREATIVE STUDIO</div>
+      <h1>Create <span>Anything</span><br>with AI.</h1>
+      <p>Turn your ideas into stunning images and videos with a simple prompt.</p>
+      <a class="primary-btn" href="#generate">Start Creating →</a>
+    </section>
+
+    <section id="generate" class="generator-section">
+      <div class="section-title">
+        <p class="eyebrow">CREATE WITH AI</p>
+        <h2>Your creative workspace</h2>
+      </div>
+
+      <div class="workspace">
+        <div class="tabs">
+          <button class="tab active" data-mode="image">🖼️ Image Generator</button>
+          <button class="tab" data-mode="video">🎬 Video Generator</button>
+        </div>
+
+        <div class="prompt-box">
+          <label for="prompt">Describe what you want to create</label>
+          <textarea id="prompt" placeholder="Example: A cinematic futuristic city at night, neon lights, ultra detailed..."></textarea>
+          <div class="controls">
+            <select id="style">
+              <option>Cinematic</option>
+              <option>Photorealistic</option>
+              <option>Anime</option>
+              <option>3D Render</option>
+              <option>Fantasy</option>
+              <option>Minimal</option>
+            </select>
+            <select id="ratio">
+              <option>16:9</option>
+              <option>1:1</option>
+              <option>9:16</option>
+              <option>4:5</option>
+            </select>
+            <button id="generateBtn" class="generate-btn">Generate <span>✦</span></button>
+          </div>
+        </div>
+
+        <div id="result" class="result">
+          <div class="placeholder">
+            <div class="spark">✦</div>
+            <h3>Your creation will appear here</h3>
+            <p>Enter a prompt above and click Generate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <p class="eyebrow">YOUR CREATIONS</p>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-card">🌌<span>AI Artwork</span></div>
+        <div class="gallery-card">🏙️<span>City Concept</span></div>
+        <div class="gallery-card">🪐<span>Space Scene</span></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <p class="eyebrow">SIMPLE PRICING</p>
+      <h2>Choose your plan</h2>
+      <div class="plans">
+        <div class="plan"><h3>Free</h3><strong>0</strong><p>20 credits/month</p><button>Get Started</button></div>
+        <div class="plan featured"><h3>Creator</h3><strong>$12</strong><p>500 credits/month</p><button>Choose Creator</button></div>
+        <div class="plan"><h3>Pro</h3><strong>$29</strong><p>1500 credits/month</p><button>Choose Pro</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 VisionAI · AI Creative Studio</footer>
+  <script src="script.js"></script>
+</body>
+</html>
